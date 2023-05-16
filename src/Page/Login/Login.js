@@ -20,7 +20,7 @@ const Login = () => {
     const json = await response.json();
     console.log(json);
     if (!json.success) {
-      alert("enter valid credential");
+      alert("enter valid credentials");
     }
     if (json.success) {
       localStorage.setItem("userEmail",credential.email)
